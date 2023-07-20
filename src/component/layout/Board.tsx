@@ -85,13 +85,7 @@ export const Board = () => {
                 }}
               ></div>
               <div className="p-home__list-content">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "flex-end",
-                    gap: "20px",
-                  }}
-                >
+                <div className="p-home__inner">
                   <h4
                     className="p-home__list-username"
                     onClick={() => {

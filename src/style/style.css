@@ -184,6 +184,11 @@
   font-size: 16px;
   word-wrap: break-word;
 }
+.p-home__inner {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
 .p-profileCard {
   position: fixed;
   background-color: #3b3779;
@@ -263,7 +268,7 @@
     display: none;
   }
   .p-home__sidebar-area {
-    width: 30%;
+    display: none;
   }
   .p-home__board-area {
     width: 50%;
@@ -271,8 +276,32 @@
     overflow-y: auto;
   }
 }
-@media screen and (max-width: 800px) {
-  .p-home__display {
+@media screen and (max-width: 600px) {
+  .p-home__profile-area {
     display: none;
+  }
+  .p-home__sidebar-area {
+    display: none;
+  }
+  .p-home__board-area {
+    width: 100%;
+    margin: 10px;
+  }
+  .p-home__layout {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .p-home__list-item {
+    display: flex;
+    width: 100%;
+    margin: 15px 0;
+    padding: 20px;
+  }
+  .p-home__list-username {
+    margin-bottom: 0;
+  }
+  .p-home__inner {
+    display: block;
+    font-size: 14px;
   }
 }
